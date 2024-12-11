@@ -25,7 +25,7 @@ def init_pk_by_input():
     while True:
         pk = input("Enter private key: ")
         logger.info("Private  key correctly")
-        if len(pk) == 66:
+        if len(pk) == 66 or len(pk) == 64:
             return pk
         else:
             print("Private key not correctly!")
